@@ -1,0 +1,16 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.fontFamily": "Cascadia Code, Cascadia Code, Consolas, 'Courier New', monospace",
+    "editor.fontLigatures": true,
+    "git.openRepositoryInParentFolders": "never",
+    "terminal.integrated.fontFamily": "CascadiaCode Nerd Font",
+    "terminal.integrated.fontSize": 12,
+    "workbench.colorTheme": "One Dark Pro",
+    "emmet.syntaxProfiles": {
+        "javascript": "jsx"
+    },
+    "emmet.triggerExpansionOnTab": true,
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    }
+}
