@@ -2,7 +2,92 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+    .btn-white {
+        @apply rounded-full drop-shadow-md hover:drop-shadow-lg bg-slate-100 text-primary hover:bg-primary hover:text-slate-100 px-6 py-3 font-semibold text-xl w-168 text-center transition-all duration-150 ease-in-out;
+    }
+    .btn-purple {
+        @apply rounded-full drop-shadow-md hover:drop-shadow-lg bg-primary text-slate-100 hover:bg-primary hover:text-slate-100 px-6 py-3 font-semibold text-xl w-168 text-center transition-all duration-150 ease-in-out;
+    }
+    .team-card {
+        @apply bg-white shadow-lg rounded-md overflow-hidden p-10 flex flex-row gap-6;
+    }
+}
 
-body {
-    height: 2000px;
+
+#hero-home {
+    background-color: #fff;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 1920px auto;
+    background-image: url(../assets/images/bg.svg);
+    height: 800px;
+}
+.decoration-top-left {
+    background-size: 1920px 100px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/top-left.svg);
+    height: 100px;
+}
+.decoration-bottom-left {
+    background-size: 1920px 100px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/bottom-left.svg);
+    height: 100px;
+}
+.decoration-bottom-right {
+    background-size: 1920px 100px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/bottom-right.svg);
+    height: 100px;
+}
+.decoration-footer {
+    background-color: #fff;
+    background-size: 1920px 250px;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/footer.svg);
+    height: 250px;
+}
+/* decoration */
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, rgb(26, 1, 117) 0%, rgba(225, 5, 34, 0) 70%) repeat scroll 0% 0%, 
+    linear-gradient(135deg, #7e22ce 10%, rgba(49, 5, 209, 0) 80%) repeat scroll 0% 0%, 
+    linear-gradient(225deg, rgb(23, 26, 25) 10%, rgba(10, 219, 216, 0) 80%) repeat scroll 0% 0%,
+     rgba(0, 0, 0, 0) linear-gradient(315deg, rgb(189, 5, 245) 100%, rgba(9, 245, 5, 0) 70%) repeat scroll 0% 0%;
+    box-shadow: inset 0 10px 24px 0 rgb(0 0 0 / 0.5);
+  }
+  /* Shapes */
+.background .shape {
+  filter: blur(465px);
+  position: absolute;
+}
+
+.background .shape:nth-child(1) {
+  background-color: #ffb0d8;
+  top: -340px;
+  width: 300px;
+  height: 300px;
+}
+
+.background .shape:nth-child(2) {
+  left: 100px;
+  bottom: -150px;
+  background-color: #c26cf3;
+  width: 200px;
+  height: 210px;
+}
+
+.background .shape:nth-child(3) {
+  background-color: #87cfdf;
+  bottom: -150px;
+  right: 100px;
+  width: 300px;
+  height: 300px;
 }
