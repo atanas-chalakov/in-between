@@ -3,67 +3,82 @@
 @tailwind utilities;
 
 @layer components {
-    .btn-white {
-        @apply rounded-full drop-shadow-md hover:drop-shadow-lg bg-slate-100 text-primary hover:bg-primary hover:text-slate-100 px-6 py-3 font-semibold text-xl w-168 text-center transition-all duration-150 ease-in-out;
-    }
-    .btn-purple {
-        @apply rounded-full drop-shadow-md hover:drop-shadow-lg bg-primary text-slate-100 hover:bg-primary hover:text-slate-100 px-6 py-3 font-semibold text-xl w-168 text-center transition-all duration-150 ease-in-out;
-    }
-    .team-card {
-        @apply bg-white shadow-lg rounded-md overflow-hidden p-10 flex flex-row gap-6;
-    }
+  .btn-white {
+    @apply rounded-full drop-shadow-md hover:drop-shadow-lg bg-slate-100 text-primary hover:bg-primary hover:text-slate-100 px-6 py-3 font-semibold text-xl w-168 text-center transition-all duration-150 ease-in-out;
+  }
+
+  .btn-purple {
+    @apply rounded-full drop-shadow-md hover:drop-shadow-lg bg-primary text-slate-100 hover:bg-primary hover:text-slate-100 px-6 py-3 font-semibold text-xl w-168 text-center transition-all duration-150 ease-in-out;
+  }
+
+  .team-card {
+    @apply bg-white shadow-lg rounded-md overflow-hidden p-10 flex flex-col sm:flex-row gap-6 flex-wrap;
+  }
 }
 
+body {
+  overflow-x: hidden;
+}
 
 #hero-home {
-    background-color: #fff;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: 1920px auto;
-    background-image: url(../assets/images/bg.svg);
-    height: 800px;
+  background-color: #fff;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: 1920px auto;
+  background-image: url(../assets/images/bg.svg);
+  height: 800px;
 }
+
+.team-card .info {
+  width: calc(100% - 152px);
+}
+
 .decoration-top-left {
-    background-size: 1920px 100px;
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-image: url(../assets/images/top-left.svg);
-    height: 100px;
+  background-size: 1920px 100px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/top-left.svg);
+  height: 100px;
 }
+
 .decoration-bottom-left {
-    background-size: 1920px 100px;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-image: url(../assets/images/bottom-left.svg);
-    height: 100px;
+  background-size: 1920px 100px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/bottom-left.svg);
+  height: 100px;
 }
+
 .decoration-bottom-right {
-    background-size: 1920px 100px;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-image: url(../assets/images/bottom-right.svg);
-    height: 100px;
+  background-size: 1920px 100px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/bottom-right.svg);
+  height: 100px;
 }
+
 .decoration-footer {
-    background-color: #fff;
-    background-size: 1920px 250px;
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-image: url(../assets/images/footer.svg);
-    height: 250px;
+  background-color: #fff;
+  background-size: 1920px 250px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-image: url(../assets/images/footer.svg);
+  height: 250px;
 }
+
 /* decoration */
 .background {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(45deg, rgb(26, 1, 117) 0%, rgba(225, 5, 34, 0) 70%) repeat scroll 0% 0%, 
-    linear-gradient(135deg, #7e22ce 10%, rgba(49, 5, 209, 0) 80%) repeat scroll 0% 0%, 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, rgb(26, 1, 117) 0%, rgba(225, 5, 34, 0) 70%) repeat scroll 0% 0%,
+    linear-gradient(135deg, #7e22ce 10%, rgba(49, 5, 209, 0) 80%) repeat scroll 0% 0%,
     linear-gradient(225deg, rgb(23, 26, 25) 10%, rgba(10, 219, 216, 0) 80%) repeat scroll 0% 0%,
-     rgba(0, 0, 0, 0) linear-gradient(315deg, rgb(189, 5, 245) 100%, rgba(9, 245, 5, 0) 70%) repeat scroll 0% 0%;
-    box-shadow: inset 0 10px 24px 0 rgb(0 0 0 / 0.5);
-  }
-  /* Shapes */
+    rgba(0, 0, 0, 0) linear-gradient(315deg, rgb(189, 5, 245) 100%, rgba(9, 245, 5, 0) 70%) repeat scroll 0% 0%;
+  box-shadow: inset 0 10px 24px 0 rgb(0 0 0 / 0.5);
+}
+
+/* Shapes */
 .background .shape {
   filter: blur(465px);
   position: absolute;
@@ -90,4 +105,52 @@
   right: 100px;
   width: 300px;
   height: 300px;
+}
+
+.animate .md\:opacity-0,
+.animate.md\:opacity-0 {
+  opacity: 1!important;
+}
+
+.custom-text-transform-left {
+  transform: translateX(-20%);
+}
+
+.custom-text-transform-right {
+  transform: translateX(20%);
+}
+
+.animate .custom-text-transform-left {
+  transform: translateX(0%);
+}
+
+.animate .custom-text-transform-right {
+  transform: translateX(0%);
+}
+@media (max-width: 768px) {
+  #hero-home {
+    background-color: #fff;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 1248px auto;
+    background-image: url(../assets/images/bg.svg);
+    height: 520px;
+  }
+  .custom-text-transform-left {
+    transform: translateX(0%);
+  }
+  
+  .custom-text-transform-right {
+    transform: translateX(0%);
+  }
+  .decoration-footer {
+    background-size: auto 120px;
+    background-position: bottom center;
+    height: 120px;
+  }
+}
+@media (max-width: 640px) {
+  .team-card .info {
+    width: 100%;
+  }
 }

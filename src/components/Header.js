@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { Component, useState, useEffect, useRef } from 'react'
+import scrollTo from 'gatsby-plugin-smoothscroll';
+
 import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
@@ -14,10 +16,10 @@ const user = {
     'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80',
 }
 const navigation = [
-  { name: 'Начало', href: '#', current: false },
-  { name: 'Проекти', href: '#', current: true },
-  { name: 'За Нас', href: '#', current: false },
-  { name: 'Eкип', href: '#', current: false },
+  { name: 'Начало', href: '#hero-home', current: false },
+  // { name: 'Проекти', href: '#', current: true },
+  { name: 'За Нас', href: '#about', current: false },
+  { name: 'Eкип', href: '#team', current: false },
 ]
 // const userNavigation = [
 //   { name: 'Your Profile', href: '#' },
@@ -30,6 +32,7 @@ function classNames(...classes) {
 }
 
 function Header() {
+  
   return (
       <header className="bg-white shadow sticky top-0 z-50">
       {/*
@@ -45,7 +48,7 @@ function Header() {
           {({ open }) => (
             <>
               <div className="container mx-auto">
-                <div className="flex h-16 items-center justify-between">
+                <div className="flex flex-row h-16 items-center justify-between">
                   <div className="flex items-center">
                     <div className="">
                       {/* <StaticImage 
@@ -56,21 +59,21 @@ function Header() {
                         width={220}
                         height={50}
                         src="../assets/images/logo-white-2.svg" alt="In Between Logo" /> */}
-                        <img src={Logo} alt="test" className='block w-168 h-auto'  />
+                        <img src={Logo} alt="logo" className='block w-168 h-auto'  />
                     </div>
                     <div className="hidden md:block">
                       <div className="ml-10 flex items-baseline space-x-4">
                         {navigation.map((item) => (
                           <a
-                            key={item.name}
-                            href={item.href}
+                            onClick={() => scrollTo(item.href)} 
+                            key={item.name} 
                             className={classNames(
                               item.current
                                 ? 'text-violet-600 hover:text-violet-700'
                                 : 'text-zinc-50 hover:text-violet-700',
-                              'rounded-md px-3 py-2 text-sm font-medium'
+                              'rounded-md px-3 py-2 text-sm font-medium cursor-pointer'
                             )}
-                            aria-current={item.current ? 'page' : undefined}
+                            // aria-current={item.current ? 'page' : undefined}
                           >
                             {item.name}
                           </a>
@@ -110,21 +113,20 @@ function Header() {
               <Disclosure.Panel className="md:hidden">
                 <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
                   {navigation.map((item) => (
-                    <Disclosure.Button
-                      key={item.name}
-                      as="a"
-                      href={item.href}
+                    <a
+                      onClick={() => scrollTo(item.href)} 
+                      key={item.name} 
                       className={classNames(
                         item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                         'block rounded-md px-3 py-2 text-base font-medium'
                       )}
-                      aria-current={item.current ? 'page' : undefined}
+                      // aria-current={item.current ? 'page' : undefined}
                     >
                       {item.name}
-                    </Disclosure.Button>
+                    </a>
                   ))}
                 </div>
-                <div className="border-t border-gray-700 pb-3 pt-4">
+                {/* <div className="border-t border-gray-700 pb-3 pt-4">
                   <div className="flex items-center px-5">
                     <div className="flex-shrink-0">
                       <img className="h-10 w-10 rounded-full" src={user.imageUrl} alt="" />
@@ -142,7 +144,7 @@ function Header() {
                       <BellIcon className="h-6 w-6" aria-hidden="true" />
                     </button>
                   </div>
-                </div>
+                </div> */}
               </Disclosure.Panel>
             </>
           )}

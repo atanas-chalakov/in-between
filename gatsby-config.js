@@ -7,7 +7,7 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`
   },
   // plugins: ["gatsby-plugin-postcss", "gatsby-plugin-google-gtag", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
-  plugins: ["gatsby-plugin-postcss", "gatsby-plugin-image", "gatsby-plugin-sitemap", {
+  plugins: ["gatsby-plugin-postcss", "gatsby-plugin-image", "gatsby-plugin-sitemap", "gatsby-plugin-smoothscroll", {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "./src/assets/images/fav-icon.svg"
