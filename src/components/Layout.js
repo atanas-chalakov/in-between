@@ -25,7 +25,7 @@ const Layout = ({ location, title, children }) => {
         window.addEventListener('scroll', function(event) {
         // add event on scroll
         findMe.forEach(element => {
-            console.log(isInViewport(element));
+            // console.log(isInViewport(element));
             //for each .thisisatest
             if (isInViewport(element)) {
             //if in Viewport

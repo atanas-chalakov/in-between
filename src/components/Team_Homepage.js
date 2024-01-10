@@ -29,7 +29,7 @@ export class Team_Homepage extends Component {
               <div className="info w-auto">
                 <h3 className="name mb-1 text-md md:text-xl font-semibold">Мира Мохсен</h3>
                 <div className="text-base md:text-md mb-1 font-semibold">Основател, организатор проекти</div>
-                <div className="text-base md:text-md font-light">Мира е артист с обширна практика в аудио-визуалното изкуство и медиум. Организатор на редица значими проекти в областта на съвременното  изкуство. Изследовател на нови изразни средства и медии на работа, голяма част от тях с екологична ориентация.</div>
+                <div className="text-base md:text-md font-light">Мира е артист с обширна практика в аудио-визуалното изкуство. Организатор на редица значими проекти в областта на съвременното  изкуство. Изследовател на нови изразни средства и медии на работа в областта екологично ориентираното визуално изкуство.</div>
               </div>
             </div>
             <div className="team-card">
@@ -39,7 +39,7 @@ export class Team_Homepage extends Component {
               <div className="info w-auto">
                 <h3 className="name mb-1 text-md md:text-xl font-semibold">Калина Пейчева</h3>
                 <div className="text-base md:text-md mb-1 font-semibold">Консултант, редактор</div>
-                <div className="text-base md:text-md font-light">Калина е изкуствовед с преобладаващ интерес към теория и философия на изкуството, както и към алтернативни методи на съвременни практики на арт-ориентираната терапия. Тя изследва в ролята си на „медиатор“ различните възможности за представяне на изкуство.</div>
+                <div className="text-base md:text-md font-light">Калина е изкуствовед с преобладаващ интерес към теория и философия на изкуството, както и към алтернативни методи и съвременни практики на арт-ориентираната терапия. Тя изследва в ролята си на „медиатор“ различните възможности за представяне на изкуство.</div>
               </div>
             </div>
             <div className="team-card">
@@ -49,7 +49,7 @@ export class Team_Homepage extends Component {
               <div className="info w-auto">
                 <h3 className="name mb-1 text-md md:text-xl font-semibold">Димитър Вълков</h3>
                 <div className="text-base md:text-md mb-1 font-semibold">Медиен експерт, сътрудник</div>
-                <div className="text-base md:text-md font-light">Димитър има научнни публикации в областта на медийната и социална педагогика, развиване на медийни компетенции, знания и умения в сфера на медиите. Участва  в множество филмови, фотографски, театрални и кросмедиални проекти в България и Германия.</div>
+                <div className="text-base md:text-md font-light">Димитър има научни публикации в областта на медийната и социална педагогика, развиване на медийни компетенции, знания и умения в сфера на медиите. Участва  в множество филмови, фотографски, театрални и крос-медия проекти в България и Германия.</div>
               </div>
             </div>
           </div>

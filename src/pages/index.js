@@ -32,7 +32,7 @@ export function Head() {
     <>
       <html lang="bg-BG" />
       <body className="font-main" />
-      <title>In Between | Home</title>
+      <title>In\between | Home</title>
       <meta name="description" content="In\between фокусира дейността си към артистични изяви и обмен в сферата на съвременното визуално изкуство, като развива и популяризира художествената сцена на България – в рамките на страната и  чужбина." />
       
     </>

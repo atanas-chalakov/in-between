@@ -25,13 +25,15 @@ module.exports = {
       colors: {
         primary: "#7e22ce",
         primary_2: "#692c90",
-        primary_3: "#f4f3fb"
+        primary_3: "#f4f3fb",
+        primary_4: "#4ecdd6",
       },
       fontFamily: {
         main: "Inter"
       },
       width: {
-        '168': 168
+        '168': 168,
+        '120': 120
       }
     },
   },

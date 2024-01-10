@@ -48,7 +48,7 @@ function Activities_Homepage() {
               <img src={Reconnect} alt="reconnect" />
             </div>
             <div className="content w-2/3 order-1">
-              <h3 className='mb-5 text-4xl font-light'>Изложби в алтернативна среда</h3>
+              <h3 className='mb-5 text-4xl font-light'>Изложби за съвременно изкуство с алтернативна презентация</h3>
               <p className='text-lg'></p>
             </div>
           </div>

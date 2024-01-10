@@ -20,10 +20,9 @@ function classNames(...classes) {
 function Footer() {
     return (
         <>
-            <div className="decoration-footer"></div>
             <footer className='bg-black text-white'>
                 <div className='mx-auto container'>
-                    <div className="footer-top pt-3 md:pt-10">
+                    <div className="footer-top pt-10 md:pt-10">
                         <div className="w-100 flex flex-col md:flex-row">
                             <div className="w-full md:w-3/4 mb-6 md:mb-0">
                                 <a href="#" className='inline-block'>
