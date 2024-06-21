@@ -16,10 +16,30 @@ import green from '../assets/images/green-v2.gif'
 import yellow from '../assets/images/yellow-v2.gif'
 import small from '../assets/images/small.png'
 
+import uni_1 from '../assets/images/uni-1.jpg'
+import uni_2 from '../assets/images/uni-2.jpg'
+import uni_3 from '../assets/images/uni-3.jpg'
+
 function Projects_Homepage_v2() {
 
   return (
     <>
+    <div className='bg-primary_3 pt-20 pb-20'>
+      <div className="container mx-auto">
+        <h2 className='animation-wrapper text-center md:mb-5 text-3xl md:text-4xl font-light opacity-1 md:opacity-0 transition ease-in-out delay-150 duration-700'>АКТИВНИ ИНФОРМАЦИОННИ КАМПАНИИ</h2>
+        <p className='text-left mb-2 text-md  text-center font-light md:mb-10'>
+          С подкрепата на УниКредит Студио, бе проведена информационна кампания “Ние сме децата на реката”- Преоткрий природата в твоя град.
+          Основната идея на фестивала е преоткриване на градските пространства, подобно на потока на реките – чрез разнообразни занимания с изкуство, спорт и дискусии на открито.
+        Събитието е част от комуникационният план за интегриране на екологично съзнание сред подрастващите и популяризиране на концепцията за зелен град, насърчаване на устойчиви практики за опазване на околната среда, както и на чувството за единство и принадлежност в общността към градската екосистема.
+        </p>
+        <div className='flex flex-col md:flex-row content-center justify-center items-top gap-10'>
+          
+          <img src={uni_1} className="block uni_img height-auto" alt="" srcset="" />
+          <img src={uni_2} className="block uni_img height-auto" alt="" srcset="" />
+          <img src={uni_3} className="block uni_img height-auto" alt="" srcset="" />
+        </div>
+      </div>
+    </div>
     <div className=' pt-20 pb-20'>
       <h2 className='animation-wrapper text-center mb-0 text-3xl md:text-4xl font-light opacity-1 md:opacity-0 transition ease-in-out delay-150 duration-700'>Акцент 2024</h2>
     </div>

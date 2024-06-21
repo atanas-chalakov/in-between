@@ -182,3 +182,7 @@ body {
 .button-white:hover {
   background-color: rgb(249, 250, 251);
 }
+.uni_img {
+  max-width: 200px;
+  width: 100%;
+}
