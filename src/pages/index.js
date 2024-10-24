@@ -15,7 +15,7 @@ const IndexPage = () => {
       <Hero_Homepage></Hero_Homepage>
       <Projects_Homepage_v2></Projects_Homepage_v2>
       {/* <Projects_Homepage></Projects_Homepage> */}
-      <About_Us_Homepage></About_Us_Homepage>
+      {/* <About_Us_Homepage></About_Us_Homepage> */}
       <Team_Homepage></Team_Homepage>
       <Partners_Homepage></Partners_Homepage>
      </Layout>

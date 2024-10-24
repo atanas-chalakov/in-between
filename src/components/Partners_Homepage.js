@@ -12,6 +12,10 @@ import baraka from '../assets/images/BARAKA-ARTIST.jpg'
 import NavaC2 from '../assets/images/NavaC2.webp'
 import artouching from '../assets/images/artouching.svg'
 
+import plovdiv from '../assets/images/plovdiv.jpg'
+import plovdiv2019 from '../assets/images/Plovdiv2019.png'
+import bulekopak from '../assets/images/bulekopak.png'
+
 export class Partners_Homepage extends Component {
   render() {
     return (
@@ -19,6 +23,17 @@ export class Partners_Homepage extends Component {
 
         <div className="container mx-auto">
           <h2 className='text-center mb-5 md:mb-10 text-2xl md:text-4xl font-light'>Партньори</h2>
+          <div className="flex flex-col mb-10 md:flex-row content-center justify-center items-center gap-10">
+            <div className="image w-full md:w-1/4 order-1 md:order-2 h-full flex justify-center items-center">
+              <img src={plovdiv2019} alt="plovdiv2019" className='h-16 md:height-auto w-auto' />
+            </div>
+            <div className="image w-full md:w-1/4 order-1 md:order-2 h-full flex justify-center items-center">
+              <img src={plovdiv} alt="plovdiv" className='h-34 md:height-auto w-auto' />
+            </div>
+            <div className="image w-full md:w-1/4 order-1 md:order-2 h-full flex justify-center items-center">
+              <img src={bulekopak} alt="bulekopak" className='h-16 md:height-auto w-auto' />
+            </div>
+          </div>
           <div className="flex content-center justify-center gap-9 mb-16">
             <div className='flex flex-col items-center'>
               <a href="https://instagram.com/bkmihai?igshid=MzRlODBiNWFlZA==" target="_blank" className="flex justify-center items-center mb-4 w-24 h-24 md:h-32 md:w-32">
